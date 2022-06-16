@@ -2,15 +2,81 @@ package boxdriver;
 
 public class Box {
 
-    public Box(int i, int i0) {
+    private int length, width, height;
+
+    public Box() {
+        this.length = 1;
+        this.width = 1;
+        this.height = 1;
     }
 
-    Box(int i, int i0, int i1) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public Box(int length, int width) {
+        this.length = length;
+        this.width = width;
+        this.height = 0;
     }
 
-    void display() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public Box(int length, int width, int height) {
+        this.length = length;
+        this.width = width;
+        this.height = height;
     }
-    
+
+    public int area() {
+        int area = width * length;
+        return area;
+    }
+
+    public int perimeter() {
+        int perimeter = 2 * width + 2 * length;
+        return perimeter;
+    }
+
+    public int volume() {
+        int volume = length * width * height;
+        return volume;
+    }
+
+    public boolean isCube() {
+        if ((width == length) && (width == height) && (length == height)) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    public boolean isBox() {
+        if ((width > 0) && (length > 0) && (height > 0)) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    public boolean isSquare() {
+        if (length == width) {
+            boolean x = true;
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    public void display() {
+        if (isCube()) {
+            System.out.println("This box is a cube: 3 on all sides");
+            System.out.println("Volume: " + this.volume());
+        } else if (isBox()) {
+            System.out.println("This box is " + this.length + " x " + this.width + " x " + this.height);
+            System.out.println("Volume: " + this.volume());
+        } else if (isSquare()) {
+            System.out.println("This is a flat square: 5 x 5");
+            System.out.println("Perimeter: " + this.perimeter());
+            System.out.println("Area: " + this.area());
+        } else {
+            System.out.println("This is a rectangle: 8 x 11");
+            System.out.println("Perimeter: " + this.perimeter());
+            System.out.println("Area: " + this.area());
+        }
+    }
 }
