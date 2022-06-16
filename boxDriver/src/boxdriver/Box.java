@@ -55,7 +55,6 @@ public class Box {
 
     public boolean isSquare() {
         if (length == width) {
-            boolean x = true;
             return true;
         } else {
             return false;
