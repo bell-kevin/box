@@ -64,17 +64,17 @@ public class Box {
 
     public void display() {
         if (isCube()) {
-            System.out.println("This box is a cube: 3 on all sides");
+            System.out.println("This box is a cube: "+ this.length+ " on all sides");
             System.out.println("Volume: " + this.volume());
         } else if (isBox()) {
             System.out.println("This box is " + this.length + " x " + this.width + " x " + this.height);
             System.out.println("Volume: " + this.volume());
         } else if (isSquare()) {
-            System.out.println("This is a flat square: 5 x 5");
+            System.out.println("This is a flat square: "+this.length+" x "+this.width);
             System.out.println("Perimeter: " + this.perimeter());
             System.out.println("Area: " + this.area());
         } else {
-            System.out.println("This is a rectangle: 8 x 11");
+            System.out.println("This is a rectangle: "+this.length+" x "+this.width);
             System.out.println("Perimeter: " + this.perimeter());
             System.out.println("Area: " + this.area());
         }
