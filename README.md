@@ -11,4 +11,4 @@ Create a display method that prints out information about the object. Use an IF-
 
 Write a driver class that instantiates or creates 4 Box objects – a cube, a box, a flat square, and a flat rectangle. Print out the name you gave to an object, then display its information. Repeat for all of the objects. 
 
-Notice how short it becomes when you use constructors instead of using a set method for every dimension of the objects.
+Notice how short it becomes when you use constructors instead of using a set method for every dimension of the objects
