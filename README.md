@@ -12,3 +12,27 @@ Create a display method that prints out information about the object. Use an IF-
 Write a driver class that instantiates or creates 4 Box objects – a cube, a box, a flat square, and a flat rectangle. Print out the name you gave to an object, then display its information. Repeat for all of the objects. 
 
 Notice how short it becomes when you use constructors instead of using a set method for every dimension of the objects.
+
+
+== We're Using GitHub Under Protest ==
+
+This project is currently hosted on GitHub.  This is not ideal; GitHub is a
+proprietary, trade-secret system that is not Free and Open Souce Software
+(FOSS).  We are deeply concerned about using a proprietary system like GitHub
+to develop our FOSS project.  We have an
+[open {bug ticket, mailing list thread, etc.} ](INSERT_LINK) where the
+project contributors are actively discussing how we can move away from GitHub
+in the long term.  We urge you to read about the
+[Give up GitHub](https://GiveUpGitHub.org) campaign from
+[the Software Freedom Conservancy](https://sfconservancy.org) to understand
+some of the reasons why GitHub is not a good place to host FOSS projects.
+
+If you are a contributor who personally has already quit using GitHub, please
+[check this resource](INSERT_LINK) for how to send us contributions without
+using GitHub directly.
+
+Any use of this project's code by GitHub Copilot, past or present, is done
+without our permission.  We do not consent to GitHub's use of this project's
+code in Copilot.
+
+![Logo of the GiveUpGitHub campaign](https://sfconservancy.org/img/GiveUpGitHub.png)
